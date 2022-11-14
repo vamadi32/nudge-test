@@ -34,7 +34,7 @@
 scriptVersion="0.0.16"
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/
 loggedInUser=$( echo "show State:/Users/ConsoleUser" | scutil | awk '/Name :/ { print $3 }' )
-plistDomain="${4:-"org.churchofjesuschrist"}"                       # Reverse Domain Name Notation (i.e., "org.churchofjesuschrist")
+plistDomain="${4:-"org.myorg"}"                       # Reverse Domain Name Notation (i.e., "org.churchofjesuschrist")
 resetConfiguration="${5:-"All"}"                                    # Configuration Files to Reset (i.e., None (blank) | All | JSON | LaunchAgent | LaunchDaemon)
 requiredBigSurMinimumOSVersion="${6:-"11.7.1"}"                      # Required macOS Big Sur Minimum Version (i.e., 11.7.1)
 requiredBigSurInstallationDate="${7:-"2022-11-24T10:00:00Z"}"       # Required macOS Big SurInstallation Date & Time (i.e., 2022-11-24T10:00:00Z)
