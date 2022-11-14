@@ -222,23 +222,6 @@ function resetConfiguration() {
 }
 
 
-function is_logo_installed(){
-    [[ ! -d  "/Library/.TradeRepublic" ]] && {
-         jamf policy -event install_trlogos
-    }
-}
-
-function is_nudge_installed(){
-    [[ ! -d "/Applications/Utilities/Nudge.app" ]] && {
-       echo "Nudge app Missing. Installing..."
-       jamf policy -event install_nudge
-    
-    }
-      
-      #"actionButtonPath": " ",
- }
-
-
 
 ####################################################################################################
 #
